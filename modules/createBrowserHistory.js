@@ -162,6 +162,8 @@ const createBrowserHistory = (props = {}) => {
     }
   };
 
+  normalizeInitialHistoryState();
+
   const initialLocation = getDOMLocation(getHistoryState());
   let allKeys = [initialLocation.key];
 
